@@ -9,7 +9,7 @@
 team_name = 'Kowsar Gure team 13!' # Only 10 chars displayed.
 strategy_name = 'if they both c return c otherwest renurn b'
 strategy_description = 'if my history-1 is and their history-1 is c then return c otherwest return b'
-    
+ import random   
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
@@ -30,7 +30,7 @@ def move(my_history, their_history, my_score, their_score):
     if my_history[-1]=='c' and their_history [-1]=='c':
         return 'c'
     else: 
-        return 'b'
+         return random.choice(['', ' ', 4])
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
